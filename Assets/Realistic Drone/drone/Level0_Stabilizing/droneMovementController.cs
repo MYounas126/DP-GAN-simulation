@@ -419,8 +419,8 @@ public class droneMovementController : MonoBehaviour {
         ticket3 = linedrawer.getTicket();
         ticket4 = linedrawer.getTicket();
 
-        // Initialize data logger
-        dataLogger = new StreamWriter("Assets/Data/human_pilot_1.csv");
+        // Initialize data loggerw
+        dataLogger = new StreamWriter("Assets/Data/human_pilot_3.csv");
         dataLogger.WriteLine("Time,PosX,PosY,PosZ," +
                      "VelX,VelY,VelZ," +
                      "AccelX,AccelY,AccelZ," +
@@ -505,11 +505,11 @@ public class droneMovementController : MonoBehaviour {
         }
 
         // Roll (A/D keys for left/right roll)
-        if (Input.GetKey(KeyCode.LeftArrow)) // Roll left
+        if (Input.GetKey(KeyCode.UpArrow)) // Roll left
         {
             manualRoll = -0.5f; // Negative roll
         }
-        else if (Input.GetKey(KeyCode.RightArrow)) // Roll right
+        else if (Input.GetKey(KeyCode.DownArrow)) // Roll right
         {
             manualRoll = 0.5f; // Positive roll
         }
@@ -609,10 +609,10 @@ public class droneMovementController : MonoBehaviour {
 
         // **Pitch Control**: Adjust pitch by modifying the front and back rotors (helixO1, O2, V1, V2)
         float pitchAdjustment = pitchPower * droneSettings.saturationValues.maxTorque;
-        helixO1.setPower(rotorThrottle - pitchAdjustment);  // Front rotor (helixO1) decreases for pitch down
-        helixO2.setPower(rotorThrottle - pitchAdjustment);  // Front rotor (helixO2) decreases for pitch down
-        helixV1.setPower(rotorThrottle + pitchAdjustment);  // Rear rotor (helixV1) increases for pitch up
-        helixV2.setPower(rotorThrottle + pitchAdjustment);  // Rear rotor (helixV2) increases for pitch up
+        helixO1.setPower(rotorThrottle - pitchAdjustment);  // Front-left rotor decreases for forward pitch
+        helixO2.setPower(rotorThrottle - pitchAdjustment);  // Front-right rotor decreases for forward pitch
+        helixV1.setPower(rotorThrottle + pitchAdjustment);  // Rear-left rotor increases for backward pitch
+        helixV2.setPower(rotorThrottle + pitchAdjustment);  // Rear-right rotor increases for backward pitch
 
         // **Roll Control**: Only apply roll if the user provides input (use a dead zone for minor inputs)
         if (Mathf.Abs(rollPower) > 0.05f)  // Added a dead zone for smoother roll control
