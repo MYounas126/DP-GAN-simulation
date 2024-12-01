@@ -3314,6 +3314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb2f49d4e00c124fbf1c47f434dd2ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  humanPilotName: Ali
   gyro: {fileID: 11496718}
   acc: {fileID: 11482132}
   bar: {fileID: 11408038}
@@ -3323,6 +3324,11 @@ MonoBehaviour:
   helixV2: {fileID: 11475168}
   helixO1: {fileID: 11459510}
   helixO2: {fileID: 11467990}
+  manualThrottle: 0
+  manualPitch: 0
+  manualRoll: 0
+  manualYaw: 0
+  isManualControlEnabled: 1
   idealPitch: 0
   idealRoll: 0
   idealYaw: 0

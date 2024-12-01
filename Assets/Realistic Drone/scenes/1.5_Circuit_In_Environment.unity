@@ -3694,18 +3694,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442520, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.38925776
       objectReference: {fileID: 0}
     - target: {fileID: 442520, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 442520, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.92112887
       objectReference: {fileID: 0}
     - target: {fileID: 442520, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
       propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442520, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 134.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460992, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460992, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
+      propertyPath: m_AngularDrag
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11416162, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
@@ -3752,6 +3764,10 @@ PrefabInstance:
       propertyPath: stayOnFixedPoint
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11423714, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
+      propertyPath: isManualControlEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11459510, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
       propertyPath: animationActivated
       value: 1
@@ -3770,7 +3786,7 @@ PrefabInstance:
       objectReference: {fileID: 2045469387}
     - target: {fileID: 11482200, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11482200, guid: 979fc5f838d46744aa26f426a3934492, type: 3}
       propertyPath: drawGizoms
