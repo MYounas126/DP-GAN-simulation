@@ -2,6 +2,10 @@
 
 **DP-GAN** is a machine learning project designed to identify drone pilots based on their unique flight patterns. Using **Unity** for simulation and **TensorFlow** for training a **Generative Adversarial Network (GAN)**, the system can classify pilots by their control behaviors, without the need for real-world drone data.
 
+Assets taken from
+[**Realistic Drone Asset** on Unity Asset Store](https://assetstore.unity.com/packages/3d/vehicles/air/realistic-drone-66698?srsltid=AfmBOoonKbT8lYVKiA7QIDxM3pyrXjDPGNPcWyWOzukmwAq52qvMPhVV)
+
+
 ## Summary:
 
 1. **Unity Setup**: Simulates drone behavior and generates control input data (throttle, pitch, yaw, roll).
