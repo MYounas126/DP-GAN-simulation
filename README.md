@@ -25,7 +25,7 @@ Python (3.7+).
 - Press **Play** in Unity to simulate drone behavior and generate control input data (throttle, pitch, roll, yaw).
 
 ### 2. Model Training
-- Install TensorFlow using pip:
+Install TensorFlow using pip:
   ```bash
   pip install tensorflow
   ```
