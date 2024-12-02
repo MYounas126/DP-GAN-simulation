@@ -14,9 +14,9 @@
 - **Pilot Identification**: Classify drone pilots based on the unique flight patterns captured by the model.
 
 ## Requirements
-Unity (for simulation).
-TensorFlow (for model training).
-Python (3.7+).
+- Unity (for simulation).
+- TensorFlow (for model training).
+- Python (3.7+).
 
 ## Setup & Usage
 
